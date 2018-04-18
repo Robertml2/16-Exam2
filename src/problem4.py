@@ -19,11 +19,11 @@ def main():
     print(' to run the testing code as you complete the TODOs.')
 
     run_test_problem4a()
-    # run_test_problem4b()
+    run_test_problem4b()
 
 
 ###############################################################################
-# TODO: 2.  READ the doc-string for the   is_prime   function below.
+# DONE: 2.  READ the doc-string for the   is_prime   function below.
 #           It is the same  is_prime  function that you have used previously,
 #           except that it returns  False  for all integers less than 2.
 #
@@ -153,14 +153,17 @@ def problem4a(strings):
       :type [str]
     """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
 
     for k in range(len(strings)):
-        if is_prime(strings[k]):
+        if is_prime(len(strings[k])):
             return strings[k]
     return -1
+
+
+    #needs to measure the length of each individual string
 
 
 
@@ -260,6 +263,10 @@ def problem4b(list_of_tuples_of_strings):
     #    *** IMPORTANT:  THIS PROBLEM COUNTS ONLY 2 POINTS
     #                    AND HAS AN ELEGANT SOLUTION.  DO NOT GET STUCK ON IT!
     # -------------------------------------------------------------------------
+    for k in range(len(list_of_tuples_of_strings)):
+        if is_prime(len(list_of_tuples_of_strings[k])):
+            return True
+    return False
 
 
 ###############################################################################

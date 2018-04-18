@@ -30,7 +30,7 @@ def main():
     p1 = Person(9)
     print(p1.get_age())# Should print 9
     print(p1.celebrate_birthday())
-    print(p1.celebrate_birthdays(2))
+    print(p1.celebrate_birthdays(1))
     print(p1.older_person())
     # -------------------------------------------------------------------------
     # WRITE MORE CODE HERE AS NEEDED to TEST the code that you write
@@ -63,7 +63,7 @@ class Person(object):
         """
         #DONE: Implement and test this method.
         self.age = self.age_track +1
-        return print('Happy birthday')
+        print('Happy birthday')
 
     def celebrate_birthdays(self, n):
         """
@@ -72,7 +72,8 @@ class Person(object):
         """
         #DONE: Implement and test this method.
 
-        self.celebrate_birthday() * n
+        self.celebrate_birthday() * n 
+
 
     def older_person(self):
         """
