@@ -72,7 +72,7 @@ class Person(object):
         """
         #DONE: Implement and test this method.
 
-        self.celebrate_birthday() * n 
+        self.celebrate_birthday() *n
 
 
     def older_person(self):
