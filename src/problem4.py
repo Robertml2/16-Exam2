@@ -2,8 +2,8 @@
 Exam 2, problem 4.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.  April 2018.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Madison Robertson.  April 2018.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import time
 import testing_helper
@@ -18,7 +18,7 @@ def main():
     print('Un-comment the calls in MAIN one by one')
     print(' to run the testing code as you complete the TODOs.')
 
-    # run_test_problem4a()
+    run_test_problem4a()
     # run_test_problem4b()
 
 
@@ -156,6 +156,12 @@ def problem4a(strings):
     # TODO: 3. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
+
+    for k in range(len(strings)):
+        if is_prime(strings[k]):
+            return strings[k]
+    return -1
+
 
 
 def run_test_problem4b():
